@@ -1,0 +1,21 @@
+{
+  "name": "Oficina Maker PAEBM",
+  "short_name": "Maker PAEBM",
+  "description": "Manual de Montagens da Oficina Maker PAEBM",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#f39c12",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192x192/f39c12/ffffff?text=Maker",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://via.placeholder.com/512x512/f39c12/ffffff?text=Maker",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
