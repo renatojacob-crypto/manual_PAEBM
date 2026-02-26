@@ -1,5 +1,5 @@
 const manuals = [
-    { id: 1, name: "Montagem 01", image: "assets/images/montagem01.jpg", pdf: "assets/pdfs/manual01.pdf" },
+    { id: 1, name: "Montagem 01", image: "assets/images/01_sirene.png", pdf: "assets/pdfs/manual01.pdf" },
     { id: 2, name: "Montagem 02", image: "assets/images/montagem02.jpg", pdf: "assets/pdfs/manual02.pdf" },
     { id: 3, name: "Montagem 03", image: "assets/images/montagem03.jpg", pdf: "assets/pdfs/manual03.pdf" },
     { id: 4, name: "Montagem 04", image: "assets/images/montagem04.jpg", pdf: "assets/pdfs/manual04.pdf" },
