@@ -3,7 +3,7 @@
   "short_name": "Maker PAEBM",
   "description": "Manual de Montagens da Oficina Maker PAEBM",
   "start_url": "index.html",
-  "display": "standalone",
+  "display": "fullscreen",
   "background_color": "#0f172a",
   "theme_color": "#f39c12",
   "icons": [
@@ -17,5 +17,11 @@
       "sizes": "512x512",
       "type": "image/png"
     }
+  ],
+  "dir": "auto",
+  "lang": "pt",
+  "orientation": "any",
+  "categories": [
+    "education"
   ]
 }
