@@ -1,16 +1,16 @@
 const manuals = [
-    { id: 1, name: "Montagem 01", image: "assets/images/01_sirene.png", pdf: "assets/pdfs/manual01.pdf" },
-    { id: 2, name: "Montagem 02", image: "assets/images/montagem02.jpg", pdf: "assets/pdfs/manual02.pdf" },
-    { id: 3, name: "Montagem 03", image: "assets/images/montagem03.jpg", pdf: "assets/pdfs/manual03.pdf" },
-    { id: 4, name: "Montagem 04", image: "assets/images/montagem04.jpg", pdf: "assets/pdfs/manual04.pdf" },
-    { id: 5, name: "Montagem 05", image: "assets/images/montagem05.jpg", pdf: "assets/pdfs/manual05.pdf" },
-    { id: 6, name: "Montagem 06", image: "assets/images/montagem06.jpg", pdf: "assets/pdfs/manual06.pdf" },
-    { id: 7, name: "Montagem 07", image: "assets/images/montagem07.jpg", pdf: "assets/pdfs/manual07.pdf" },
-    { id: 8, name: "Montagem 08", image: "assets/images/montagem08.jpg", pdf: "assets/pdfs/manual08.pdf" },
-    { id: 9, name: "Montagem 09", image: "assets/images/montagem09.jpg", pdf: "assets/pdfs/manual09.pdf" },
-    { id: 10, name: "Montagem 10", image: "assets/images/montagem10.jpg", pdf: "assets/pdfs/manual10.pdf" },
-    { id: 11, name: "Montagem 11", image: "assets/images/montagem11.jpg", pdf: "assets/pdfs/manual11.pdf" },
-    { id: 12, name: "Montagem 12", image: "assets/images/montagem12.jpg", pdf: "assets/pdfs/manual12.pdf" }
+    { id: 1, name: "Sistema de Alerta Sirene", image: "assets/images/01_sirene.png", pdfs: ["assets/pdfs/01.1_manual_sirene_lego.pdf","01.2_circuito_eletronico_sirenes.pdf"] },
+    { id: 2, name: "Postes Rota de Fuga", image: "assets/images/02_poste_sinalizacao.png", pdfs: ["assets/pdfs/02_poste_sinalizacao.pdf"] },
+    { id: 3, name: "Estrutura Lateral das Barragens", image: "assets/images/03_lateral_barragem.png", pdfs: ["assets/pdfs/03_lateral_barragem.pdf"] },
+    { id: 4, name: "Barragem por Centro de Linha", image: "assets/images/04_barragem_centro_linha.png", pdfs: ["assets/pdfs/04_barragem_centro_linha.pdf"] },
+    { id: 5, name: "Barragem a Jusante", image: "assets/images/05_barragem_jusante.png", pdfs: ["assets/pdfs/05_barragem_jusante.pdf"] },
+    { id: 6, name: "Barragem a Montante", image: "assets/images/06_barragem_montante.png", pdfs: ["assets/pdfs/06.1_barragem_montante.pdf","06.2_circuito_eletronico_barragem.pdf"]},
+    { id: 7, name: "Casa Menor da Cidade", image: "assets/images/07_duplex 70x70x140.png", pdfs: ["assets/pdfs/07_manual duplex 70x70x140.pdf"] },
+    { id: 8, name: "Casa Maior da Cidade", image: "assets/images/08_casa3D 70x70x70.png", pdfs: ["assets/pdfs/08_manual_casa3D_70x70x70.pdf"] },
+    { id: 9, name: "Radar Doppler", image: "assets/images/09_casa3D_radar_doppler.png", pdfs: ["assets/pdfs/09.1_manual_radar_lego.pdf","09.2_manual_casa_radar_doppler.pdf"]},
+    { id: 10, name: "Centro de Monitoramente Geotécnico", image: "assets/images/10.1_escritorio_CMG.png", pdfs: ["assets/pdfs/10.1_escritorio_CMG.pdf","10.2_circuito_eletronico_CMG.pdf"]},
+    { id: 11, name: "Poste do Vídeo Monitoramento", image: "assets/images/11_poste_videomonitoramento.png", pdfs: ["assets/pdfs/11_poste_videomonitoramento.pdf"] },
+    { id: 12, name: "Montagem 12", image: "assets/images/montagem12.jpg", pdfs: ["assets/pdfs/manual12.pdf"] }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     manuals.forEach(manual => {
         const card = document.createElement('a');
-        card.href = `viewer.html?pdf=${encodeURIComponent(manual.pdf)}`;
+        card.href = `viewer.html?id=${manual.id}`;
         card.className = 'manual-card';
         
         card.innerHTML = `
