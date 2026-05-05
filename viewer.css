@@ -67,3 +67,27 @@ button:hover {
     color: white;
     display: none;
 }
+.top-bar {
+    width: 100%;
+    padding: 16px 20px;
+    background: #111827;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.back-btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.back-btn:hover {
+    background: #1d4ed8;
+}
