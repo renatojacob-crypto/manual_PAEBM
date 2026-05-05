@@ -19,6 +19,7 @@
 body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--bg-color);
+    background-image: image("assets/images/tapete.jpeg");
     color: var(--text-main);
     line-height: 1.6;
     overflow-x: hidden;
