@@ -20,7 +20,7 @@ body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--bg-color);
     background-image: 
-        linear-gradient(rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.82)),
+        linear-gradient(rgba(15, 23, 42, 0.32), rgba(15, 23, 42, 0.32)),
         url("assets/images/tapete.jpeg");
     background-size: cover;
     background-position: center;
