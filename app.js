@@ -14,22 +14,22 @@ const manuals = [
 
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('manuals-grid');
-    grid.innerHTML = ''; // Limpa o loading
+    grid.innerHTML = '';
 
     manuals.forEach(manual => {
         const card = document.createElement('a');
         card.href = `viewer.html?id=${manual.id}`;
         card.className = 'manual-card';
-        
+
         card.innerHTML = `
             <div class="image-container">
-                <img src="${manual.image}" alt="${manual.name}" onerror="this.src='https://via.placeholder.com/400x225/2d3748/f39c12?text=${encodeURIComponent(manual.name)}'">
+                <img src="${manual.image}" alt="${manual.name}">
             </div>
             <div class="card-content">
                 <h3>${manual.name}</h3>
             </div>
         `;
-        
+
         grid.appendChild(card);
     });
 });

@@ -5,6 +5,8 @@ const ASSETS = [
     './viewer.html',
     './styles.css',
     './app.js',
+    './viewer.js',
+    './viewer.css',
     './manifest.json',
     'https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap'
 ];
@@ -31,6 +33,11 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
     event.respondWith(
         caches.match(event.request)
-            .then(response => response || fetch(event.request))
+            .then(response => {
+                return response || fetch(event.request);
+            })
+            .catch(() => {
+                return fetch(event.request);
+            })
     );
 });

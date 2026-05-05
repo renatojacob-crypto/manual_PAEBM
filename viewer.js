@@ -75,19 +75,12 @@ const manuals = [
 			{ path: "assets/pdfs/11_poste_videomonitoramento.pdf", title: "Manual de Montagem do Poste de Videomonitoramento" }
 		]
 	},
-	{
-		id: 12,
-		pdfs: [
-			{ path: "adicionar aqui.", title: "adicionar aqui" }
-		]
-	},
     ]
     // 👉 Adicione aqui todos os outros IDs,
     // mesmo que tenham apenas 1 PDF
 
 const container = document.getElementById("pdf-container");
 const topBtn = document.getElementById("topBtn");
-
 const manual = manuals.find(m => m.id === id);
 
 if (!manual) {
